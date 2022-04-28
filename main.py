@@ -62,9 +62,9 @@ class RedactBadRedactions(AddOn):
                         eachPage.append(
                             {"page_number": page-1, "x1": bbox[0]/width, "y1": bbox[1]/height, "x2": bbox[2]/width, "y2": bbox[3]/height})
 
-                        # make the api call for this document
-                        self.client.post(
-                            f"documents/{document.id}/redactions/", json=eachPage)
+                # make the api call for this document
+                self.client.post(
+                    f"documents/{document.id}/redactions/", json=eachPage)
             if counter == 0:
                 self.set_message("No Bad Redactions Found")
             else:
