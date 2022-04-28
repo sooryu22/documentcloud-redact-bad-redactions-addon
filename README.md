@@ -1,5 +1,5 @@
 
-# DocumentCloud Add-On Example
+# DocumentCloud Add-On — Redact Bad Redactions
 
 This repository contains an example Add-On for DocumentCloud.  It is designed
 to be copied and modified to allow one to easily write Add-Ons to bring custom
